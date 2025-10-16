@@ -1,0 +1,186 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global Styles */
+:root {
+    --primary-color: #C20D0D;    /* Merah Detik */
+    --secondary-color: #2D3748;
+    --accent-color: #F56565;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #F7FAFC;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    padding-top: 0px; /* Sangat penting untuk fixed navbar */
+}
+
+/* Navbar Styles */
+.navbar-det {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    z-index: 1030;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #C20D0D !important;
+    text-decoration: none;
+}
+
+.navbar-brand span {
+    color: #333333;
+}
+
+.navbar-nav .nav-link {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #C20D0D !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #C20D0D !important;
+    font-weight: 600;
+}
+
+.login-btn {
+    color: #333333 !important;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    color: #C20D0D !important;
+}
+
+/* Hero Section Styles */
+.hero-video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 1;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.hero-content {
+    color: white;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-buttons .btn {
+    margin-right: 1rem;
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-watch-video {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-watch-video:hover {
+    background: white;
+    color: #333;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .hero-section {
+        height: 60vh;
+        text-align: center;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.2rem 0;
+        padding: 0.8rem 1rem;
+    }
+    
+    .login-btn {
+        display: block;
+        text-align: center;
+        margin-top: 0.5rem;
+        padding: 0.8rem 1rem;
+    }
+}
