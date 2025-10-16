@@ -84,4 +84,5 @@ document.addEventListener('DOMContentLoaded', function() {
         levelFilter.value = '';
         filterJobs();
     }
+
 });
