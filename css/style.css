@@ -176,6 +176,39 @@ body {
     color: #333;
 }
 
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #e0e3e8; /* hanya satu garis tipis */
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer .row {
+  border-top: none !important; /* hapus garis tambahan di dalam row */
+}
+
+.footer .social-link {
+  color: #1d3b8b;
+  font-size: 18px;
+  margin-left: 15px;
+  transition: 0.2s;
+}
+
+.footer .social-link:hover {
+  color: #f15a24;
+}
+
+.footer-bottom a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-bottom a:hover {
+  color: #f15a24;
+}
+
+
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     body {
