@@ -1,5 +1,12 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import url('components/header.css');
+@import url('components/hero.css');
+@import url('components/about.css');
+@import url('components/job.css');
 
 /* Global Styles */
 :root {
@@ -19,12 +26,13 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat';
     color: var(--text-dark);
-    padding-top: 0px; /* Sangat penting untuk fixed navbar */
+    padding-top: 0;
 }
 
 /* Navbar Styles */
+
 .navbar-det {
     background-color: rgba(255, 255, 255, 0.95) !important;
     backdrop-filter: blur(10px);
@@ -42,11 +50,11 @@ body {
 }
 
 .navbar-brand span {
-    color: #333333;
+    color: #FFFFFF;
 }
 
 .navbar-nav .nav-link {
-    color: #333333 !important;
+    color: #FFFFFF !important;
     font-weight: 500;
     font-size: 0.95rem;
     padding: 0.5rem 1rem;
@@ -55,7 +63,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #C20D0D !important;
+    color: #FFFFFF !important;
 }
 
 .navbar-nav .nav-link.active {
@@ -63,8 +71,8 @@ body {
     font-weight: 600;
 }
 
-.login-btn {
-    color: #333333 !important;
+.login {
+    color: white !important;
     font-weight: 500;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -106,10 +114,40 @@ body {
 }
 
 .hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 
+        3px 3px 0 rgb(255, 255, 255),
+        -1px -1px 0 rgba(255, 255, 255, 0),
+        1px -1px 0 rgba(0, 0, 0, 0),
+        -1px 1px 0 rgba(255, 255, 255, 0),
+        1px 1px 0 rgba(255, 255, 255, 0);
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, black 0%, black 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Alternatif: Jika mau lebih bold dengan outline */
+.hero-title.alternative {
+    color: #ffffff;
+    text-shadow: 
+        4px 4px 0px #C20D0D,
+        8px 8px 0px rgba(194, 13, 13, 0.3);
+}
+
+/* Alternatif 2: Solid white dengan shadow merah */
+.hero-title.contrast {
+    color: #ffffff;
+    text-shadow: 
+        2px 2px 0 #C20D0D,
+        4px 4px 0 rgba(194, 13, 13, 0.7),
+        6px 6px 0 rgba(194, 13, 13, 0.4);
 }
 
 .hero-subtitle {
@@ -129,7 +167,7 @@ body {
 
 .btn-watch-video {
     background: transparent;
-    border: 2px solid white;
+    border: transparent;
     color: white;
 }
 
