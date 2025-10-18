@@ -6,7 +6,6 @@
     z-index: 1030;
 }
 
-/* Navbar saat scroll (Putih) */
 .navbar.scrolled {
     background: rgba(255, 255, 255, 0.95) !important;
     backdrop-filter: blur(10px);
@@ -14,7 +13,6 @@
     padding: 1rem 0;
 }
 
-/* Logo saat transparan */
 .navbar-brand img {
     height: 25px;
     width: auto;
@@ -22,12 +20,12 @@
     transition: all 0.3s ease;
 }
 
-/* Logo saat scroll (kembali ke warna asli) */
+
 .navbar.scrolled .navbar-brand img {
     filter: none;
 }
 
-/* Menu items saat transparan */
+
 .navbar-nav .nav-link {
     color: white !important;
     font-weight: 500;
@@ -36,7 +34,7 @@
     transition: all 0.3s ease;
 }
 
-/* Menu items saat scroll (ubah jadi hitam) */
+
 .navbar.scrolled .nav-link {
     color: #333333 !important;
 }
@@ -46,7 +44,7 @@
     color: #C20D0D !important;
 }
 
-/* Login button saat transparan */
+
 .login-btn {
     color: white !important;
     font-weight: 500;
@@ -57,7 +55,7 @@
     transition: all 0.3s ease;
 }
 
-/* Login button saat scroll */
+
 .navbar.scrolled .login-btn {
     color: #333333 !important;
     border-color: #333333;
@@ -69,7 +67,7 @@
     border-color: #C20D0D;
 }
 
-/* Mobile toggle button */
+
 .navbar-toggler {
     border: 2px solid white;
     background: transparent;
@@ -88,7 +86,7 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23333' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 991.98px) {
     .navbar-collapse {
         background: rgba(0, 0, 0, 0.9);
